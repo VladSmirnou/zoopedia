@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../images/fox-icon-16x16.png">
         <meta name="author" content="John Doe">
         <meta
             name="description"
@@ -11,64 +10,70 @@
             a place where you can find all information
             about animals you like">
         <title>Zoopedia</title>
+        <link rel="icon" href="../images/fox-icon-16x16.png">
+        <link rel="stylesheet" href="../styles/animal-styles.css">
     </head>
     <body>
         <header>
-            <h1>Zoopedia</h1>
-            <p>Your best friend in the animal world!</p>
+            <div class="h1-p">
+                <h1>Zoopedia</h1>
+                <p>Your best friend in the animal world!</p>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+                <ul class="main-nav-bar">
+                    <li class="left"><a href="index.html">Home</a></li>
                     <li><a href="short-descriptions.html">Short animal descriptions</a></li>
-                    <li><a href="glossary.html">Animal glossary</a></li>
+                    <li class="right"><a href="glossary.html">Animal glossary</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
-                <h2>Lion</h2>
-                <section>
-                    <h3>Overview</h3>
-                    <figure style="margin-left: 0;">
-                        <img src="../images/lion.webp" alt="a big lion is looking into the distance" width="400" height="300">
-                        <figcaption>Lions are <strong>very</strong> beautiful.</figcaption>
-                    </figure>
-                    <blockquote cite="https://nationalzoo.si.edu/" style="margin-left: 0;">
-                        <p><b>Lions</b> have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones. Young lions have light spotting on their coats that disappears as they grow.</p>
-                        <p>Source: <a href="https://nationalzoo.si.edu/"><cite>Smithsonian's National Zoo & Conservation Biology Institute</cite></a>.</p>
-                    </blockquote>
-                </section>
-                <section>
-                    <h3>Lions in real Nature</h3>
-                    <p>This video from the <a href="https://www.youtube.com/@NatGeoWild"><cite><abbr title="National Geographic">NG</abbr></cite></a> channel shows lions in their natural habitat.</p>
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/OMkEVX23BdM?si=ltLSIk39z_uUSVmr" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </section>
-                <section>
-                    <h3>How they sound</h3>
-                    <p>Lions can produce a very strong roar!</p>
-                    <figure style="margin-left: 0;">
-                        <figcaption style="margin: 0px 0px 10px;">An example of a real lion's roar:</figcaption>
-                        <audio controls>
-                            <source src="../media/audios/lion-roar-6011.mp3" type="audio/mp3">
-                            <p>
-                                Your browser doesn't support this audio element. Download the
-                                <a
+            <div class="main-content">
+                <section class="content-section">
+                    <h2>Lion</h2>
+                    <section>
+                        <h3>Overview</h3>
+                        <figure>
+                            <img class="main-img" src="../images/lion.webp" alt="a big lion is looking into the distance">
+                            <figcaption>Lions are <strong>very</strong> beautiful.</figcaption>
+                        </figure>
+                        <blockquote cite="https://nationalzoo.si.edu/">
+                            <p><b>Lions</b> have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones. Young lions have light spotting on their coats that disappears as they grow.</p>
+                            <p>Source: <a href="https://nationalzoo.si.edu/"><cite>Smithsonian's National Zoo & Conservation Biology Institute</cite></a>.</p>
+                        </blockquote>
+                    </section>
+                    <section>
+                        <h3>Lions in real Nature</h3>
+                        <p>This video from the <a href="https://www.youtube.com/@NatGeoWild"><cite><abbr title="National Geographic">NG</abbr></cite></a> channel shows lions in their natural habitat.</p>
+                        <iframe src="https://www.youtube.com/embed/OMkEVX23BdM?si=ltLSIk39z_uUSVmr" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <h3>How they sound</h3>
+                        <p>Lions can produce a very strong roar!</p>
+                        <figure>
+                            <figcaption>An example of a real lion's roar:</figcaption>
+                            <audio controls>
+                                <source src="../media/audios/lion-roar-6011.mp3" type="audio/mp3">
+                                <p>
+                                    Your browser doesn't support this audio element. Download the
+                                    <a
                                     href="../media/audios/lion-roar-6011.mp3"
                                     download="lion-roar-sound.mp3">
                                     audio file</a> directly instead (mp3, 80kb).
-                            </p>
-                        </audio>
-                    </figure>
+                                </p>
+                            </audio>
+                        </figure>
+                    </section>
                 </section>
-            </section>
+                <aside>
+                    <p>A lion can ride a bike!</p>
+                </aside>
+            </div>
             <section>
                 <p>
                     Check out the <a href="../templates/snake-descr.html">snakes description</a> as well!
                 </p>
             </section>
-            <aside>
-                <p>A lion can ride a bike!</p>
-            </aside>
         </main>
         <footer>
             <address>

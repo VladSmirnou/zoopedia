@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.main-nav-bar {
+    display: flex;
+}
+
+.main-nav-bar > li {
+    flex: 1;
+    text-align: center;
+}
+
+.left {
+    border-right: 2px solid black;
+}
+
+.right {
+    border-left: 2px solid black;
+}
+
+.h1-p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+header,
+main,
+footer,
+aside {
+    border: 2px solid black;
+}
+
+header > nav {
+    border: 2px solid black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header,
+main,
+footer {
+    width: 70%;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    align-self: flex-start;
+    min-height: 50%;
+}
+
+.content-section {
+    flex: 5;
+    margin-right: 15px;
+}

@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../images/fox-icon-16x16.png">
         <meta name="author" content="John Doe">
         <meta
             name="description"
@@ -11,27 +10,33 @@
             a place where you can find all information
             about animals you like">
         <title>Zoopedia</title>
+        <link rel="icon" href="../images/fox-icon-16x16.png">
+        <link rel="stylesheet" href="../styles/secondary-page-styles.css">
     </head>
     <body>
         <header>
-            <h1>Zoopedia</h1>
-            <p>Your best friend in the animal world!</p>
+            <div class="h1-p">
+                <h1>Zoopedia</h1>
+                <p>Your best friend in the animal world!</p>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+                <ul class="main-nav-bar">
+                    <li class="left"><a href="index.html">Home</a></li>
                     <li><a href="short-descriptions.html">Short animal descriptions</a></li>
-                    <li>Animal glossary</li>
+                    <li class="right">Animal glossary</li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
+            <section class="content-section">
                 <h2>A list of full animal descriptions</h2>
-                <ul>
-                    <li><a href="lion-descr.html">Lion</a></li>
-                    <li><a href="snake-descr.html">Snake</a></li>
-                    <li><a href="elephant-descr.html">Elephant</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="lion-descr.html">Lion</a></li>
+                        <li><a href="snake-descr.html">Snake</a></li>
+                        <li><a href="elephant-descr.html">Elephant</a></li>
+                    </ul>
+                </nav>
             </section>
             <aside>
                 <nav>
@@ -41,7 +46,7 @@
                             <fieldset>
                                 <legend>What animal <strong>you</strong> want to know about?</legend>
                                 <label for="animal-search">Animal name:</label>
-                                <input id="animal-search" type="search" name="animal-search" placeholder="i.e. Lion"> <button type="submit">Search!</button>
+                                <input style="width: 100%;" id="animal-search" type="search" name="animal-search" placeholder="i.e. Lion"> <button type="submit">Search!</button>
                             </fieldset>
                         </form>
                     </section>

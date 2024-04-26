@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../images/fox-icon-16x16.png">
         <meta name="author" content="John Doe">
         <meta
             name="description"
@@ -11,64 +10,70 @@
             a place where you can find all information
             about animals you like">
         <title>Zoopedia</title>
+        <link rel="icon" href="../images/fox-icon-16x16.png">
+        <link rel="stylesheet" href="../styles/animal-styles.css">
     </head>
     <body>
         <header>
-            <h1>Zoopedia</h1>
-            <p>Your best friend in the animal world!</p>
+            <div class="h1-p">
+                <h1>Zoopedia</h1>
+                <p>Your best friend in the animal world!</p>
+            </div>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+                <ul class="main-nav-bar">
+                    <li class="left"><a href="index.html">Home</a></li>
                     <li><a href="short-descriptions.html">Short animal descriptions</a></li>
-                    <li><a href="glossary.html">Animal glossary</a></li>
+                    <li class="right"><a href="glossary.html">Animal glossary</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
-                <h2>Snake</h2>
-                <section>
-                    <h3>Overview</h3>
-                    <figure>
-                        <img src="../images/snake.jpg" alt="a green snake" width="400" height="300">
-                        <figcaption>Snakes are <strong>super</strong> long.</figcaption>
-                    </figure>
-                    <blockquote style="margin-left: 0;">
-                        The <b>smooth green snake</b> (<b><i>Opheodrys vernalis</i></b>) is a species of North American nonvenomous snake in the family Colubridae. The species is also referred to as the <b>grass snake</b>. It is a slender, &quot;small medium&quot; snake that measures 36–51 cm (14–20 in) as an adult. It gets its common name from its smooth dorsal scales, as opposed to the rough green snake, which has keeled dorsal scales. The smooth green snake is found in marshes, meadows, open woods, and along stream edges, and is native to regions of Canada, the United States, and northern Mexico. A non-aggressive snake, it seldom bites and usually flees when threatened. It mates in late spring to summer, and females lay their eggs from June to September. The smooth green snake will often bob its head in order to mimic vegetation blowing in the wind.    
-                        <p>Source: <a href="https://en.wikipedia.org/wiki/Smooth_green_snake"><cite>Wikipedia</cite></a>.</p>
-                    </blockquote>
+            <div class="main-content">
+                <section class="content-section">
+                    <h2>Snake</h2>
+                    <section>
+                        <h3>Overview</h3>
+                        <figure>
+                            <img class="main-img" src="../images/snake.jpg" alt="a green snake">
+                            <figcaption>Snakes are <strong>super</strong> long.</figcaption>
+                        </figure>
+                        <blockquote>
+                            The <b>smooth green snake</b> (<b><i>Opheodrys vernalis</i></b>) is a species of North American nonvenomous snake in the family Colubridae. The species is also referred to as the <b>grass snake</b>. It is a slender, &quot;small medium&quot; snake that measures 36–51 cm (14–20 in) as an adult. It gets its common name from its smooth dorsal scales, as opposed to the rough green snake, which has keeled dorsal scales. The smooth green snake is found in marshes, meadows, open woods, and along stream edges, and is native to regions of Canada, the United States, and northern Mexico. A non-aggressive snake, it seldom bites and usually flees when threatened. It mates in late spring to summer, and females lay their eggs from June to September. The smooth green snake will often bob its head in order to mimic vegetation blowing in the wind.
+                            <p>Source: <a href="https://en.wikipedia.org/wiki/Smooth_green_snake"><cite>Wikipedia</cite></a>.</p>
+                        </blockquote>
+                    </section>
+                    <section>
+                        <h3>Snakes in real Nature</h3>
+                        <p>This video from the <a href="https://www.youtube.com/@NatGeoWild"><cite><abbr title="National Geographic">NG</abbr></cite></a> channel shows snakes in their natural habitat.</p>
+                        <iframe src="https://www.youtube.com/embed/_qgA63Ixc_Y?si=FRGo0lg0Gk93gsPH" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </section>
+                    <section>
+                        <h3>How they sound</h3>
+                        <p>Snakes can hiss!</p>
+                        <figure>
+                            <figcaption>An example of a real snake's hiss:</figcaption>
+                            <audio controls>
+                                <source src="../media/audios/snake-hissing-6092.mp3" type="audio/mp3">
+                                <p>
+                                    Your browser doesn't support this audio element. Download the
+                                    <a
+                                        href="../media/audios/snake-hissing-6092.mp3"
+                                        download="snake-hissing-sound.mp3">
+                                        audio file</a> directly instead (mp3, 80kb).
+                                </p>
+                            </audio>
+                        </figure>
+                    </section>
                 </section>
-                <section>
-                    <h3>Snakes in real Nature</h3>
-                    <p>This video from the <a href="https://www.youtube.com/@NatGeoWild"><cite><abbr title="National Geographic">NG</abbr></cite></a> channel shows snakes in their natural habitat.</p>
-                    <iframe width="500" height="300" src="https://www.youtube.com/embed/_qgA63Ixc_Y?si=FRGo0lg0Gk93gsPH" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </section>
-                <section>
-                    <h3>How they sound</h3>
-                    <p>Snakes can hiss!</p>
-                    <figure style="margin-left: 0;">
-                        <figcaption style="margin: 0px 0px 10px;">An example of a real snake's hiss:</figcaption>
-                        <audio controls>
-                            <source src="../media/audios/snake-hissing-6092.mp3" type="audio/mp3">
-                            <p>
-                                Your browser doesn't support this audio element. Download the
-                                <a
-                                    href="../media/audios/snake-hissing-6092.mp3"
-                                    download="snake-hissing-sound.mp3">
-                                    audio file</a> directly instead (mp3, 80kb).
-                            </p>
-                        </audio>
-                    </figure>
-                </section>
-            </section>
+                <aside>
+                    <p>Snakes can wear hats!</p>
+                </aside>
+            </div>
             <section>
                 <p>
                     Check out the <a href="../templates/elephant-descr.html">elephant's description</a> as well!
                 </p>
             </section>
-            <aside>
-                <p>Snakes can wear hats!</p>
-            </aside>
         </main>
         <footer>
             <address>
