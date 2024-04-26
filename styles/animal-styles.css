@@ -1,0 +1,33 @@
+@import url(base.css);
+
+/* diff */
+main {
+    margin: 15px 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+iframe {
+    width: 50%;
+    max-width: 800px;
+    aspect-ratio: 2 / 1;
+}
+
+audio {
+    max-width: 40%;
+}
+
+.main-img {
+    max-width: 50%;
+}
+
+.main-content {
+    display: flex;
+    min-height: 550px;
+}
+/* diff */
