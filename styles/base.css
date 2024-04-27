@@ -5,28 +5,13 @@
     line-height: 1.2;
 }
 
-.main-nav-bar {
-    display: flex;
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
 }
-
-.main-nav-bar > li {
-    flex: 1;
-    text-align: center;
-}
-
-.left {
-    border-right: 2px solid black;
-}
-
-.right {
-    border-left: 2px solid black;
-}
-
-.h1-p {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
 
 header,
 main,
@@ -59,4 +44,26 @@ aside {
 .content-section {
     flex: 5;
     margin-right: 15px;
+}
+
+.main-nav-bar {
+    display: flex;
+}
+
+.main-nav-bar > li {
+    flex: 1;
+    text-align: center;
+}
+
+.left {
+    border-right: 2px solid black;
+}
+
+.right {
+    border-left: 2px solid black;
+}
+
+.h1-p {
+    text-align: center;
+    margin-bottom: 15px;
 }
